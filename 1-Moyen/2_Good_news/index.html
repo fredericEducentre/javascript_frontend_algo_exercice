@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good News Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Good News</h1>
+
+    <div class="card">
+        <p id="theGoodNews">Clique sur le bouton pour découvrir une bonne nouvelle ✨</p>
+        <!--https://www.w3schools.com/jsref/event_onclick.asp-->
+        <button onclick="...">J'ai de la chance !</button>
+    </div>
+
+    <script>
+        let theGoodNews = ...;
+
+        let goodNews = [
+            "Une belle surprise t’attend dans les prochains jours.",
+            "Tu vas rencontrer quelqu’un qui changera ta vision des choses.",
+            "Un projet que tu as en tête depuis longtemps va enfin se concrétiser.",
+            "La chance te sourira au moment où tu t’y attendras le moins.",
+            "Un voyage inattendu t’apportera beaucoup de joie.",
+            "Tu recevras bientôt une bonne nouvelle liée à ton travail.",
+            "Une opportunité se présentera : saisis-la sans hésiter.",
+            "Quelqu’un proche de toi va te montrer une grande reconnaissance.",
+            "Ton intuition te guidera vers un choix très bénéfique.",
+            "Une période de calme et de sérénité arrive pour toi."
+        ];
+
+        function getRandomGoodNews() {
+            let randomNumber = Math.floor(Math.random() * goodNews.length);
+            return goodNews[randomNumber];
+        }
+
+        function displayGoodNews() {
+            ...;
+        }
+    </script>
+</body>
+</html>
