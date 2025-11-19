@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input id="myInput" type="text">
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <section id="citationsSection">
+    
+    </section>
+
+    <!--on click-->
+    <button onclick="displayAlert()">Alert</button>
+    <script>
+     
+    let citationsSection = document.getElementById("citationsSection");
+    citationsSection.innerHTML = "<p>Lorem ipsum</p>"
+
+    // 
+    const newP = document.createElement('p');
+    newP.textContent = "Lorem ipsum2";
+    citationsSection.append(newP);
+
+    // Get input of the user
+    let myForm = document.getElementById("myForm");
+    myForm.addEventListener('submit', displayFormValue)
+
+    function displayFormValue(event){
+        event.preventDefault();
+        const text = document.getElementById("myInput");
+        console.log(text.value);
+    }
+
+    let myInput = document.getElementById("myInput");
+    console.dir(myInput);
+
+    //Executer du javascript
+    function displayAlert(){
+        window.alert("hello world")
+    }
+    </script>
+</body>
+</html>
