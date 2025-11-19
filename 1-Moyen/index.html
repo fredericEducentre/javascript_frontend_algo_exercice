@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		// https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+        const CHIFFRE_AFFAIRE_FORMULAIRE = ...;
+        const CHIFFRE_AFFAIRE = ...;
+        const CHIFFRE_AFFAIRE_APRES_DEDUCTION_URSSAF = ...;
+        const POURCENTAGE_URSSAF = 26;
+
+        // https://developer.mozilla.org/fr/docs/Web/API/Node/textContent
+        function displayCA(event) {
+            ...;
+            event.preventDefault();
+        }
+
+        function chiffreAffaireApresDeductionURSSAF() {
+            return CHIFFRE_AFFAIRE.value -(CHIFFRE_AFFAIRE.value * POURCENTAGE_URSSAF) / 100;
+        }
+
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+        ...;
+    </script>
+</body>
+</html>
