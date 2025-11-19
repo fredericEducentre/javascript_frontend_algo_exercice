@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <!--Intégration des icones fontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <div class="switch-wrapper">
+        <button id="switchModeButton" onclick="...">
+            <i id="switchModeIcon" class="fa-solid fa-sun"></i>
+        </button>
+    </div>
+
+    <div class="content">
+        <h1>Dark / Light Mode</h1>
+        <p>Appuie sur le bouton en haut à droite pour changer le mode d'affichage.</p>
+    </div>
+
+    <script>
+        let body = ...;
+        let switchModeIcon = ...;
+
+        let lightMode = true;
+
+        function switchMode() {
+            return !lightMode;
+        }
+
+        function changeBackgroundColor() {
+            lightMode = switchMode();
+
+            // https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+            ...
+
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator
+            ...
+        }
+    </script>
+</body>
+</html>

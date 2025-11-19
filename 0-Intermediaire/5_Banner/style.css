@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn.leonardo.ai/users/2cbfd30f-6e5b-419d-94c0-00853dd21810/generations/58c67e1b-e085-4b89-8cdb-89226b4f0147/segments/4:4:1/Flux_Schnell_a_serene_and_expansive_landscape_with_rolling_hil_3.jpg");
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Dégradé sombre pour lisibilité */
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
+}
+
+/* Texte centré dans le header */
+.hero-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Animation de fondu pour le changement d'image */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

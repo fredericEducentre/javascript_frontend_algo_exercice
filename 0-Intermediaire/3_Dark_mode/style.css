@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.switch-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#switchModeButton {
+    border-radius: 50%;
+    border: none;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+}
+
+#switchModeButton:hover {
+    transform: scale(1.08);
+}
+
+.content {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+body.dark {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+body.dark .content {
+    background: rgba(40, 40, 40, 0.6);
+}
+
+body.dark #switchModeButton {
+    background: #333;
+    color: #ffd86b;
+}
