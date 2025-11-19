@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner Slider</title>
+</head>
+
+<body>
+    <script>
+        let banner = ...;
+
+        let imagesArray = [
+            "https://cdn.leonardo.ai/users/2cbfd30f-6e5b-419d-94c0-00853dd21810/generations/58c67e1b-e085-4b89-8cdb-89226b4f0147/segments/4:4:1/Flux_Schnell_a_serene_and_expansive_landscape_with_rolling_hil_3.jpg",
+            "https://cdn.leonardo.ai/users/2cbfd30f-6e5b-419d-94c0-00853dd21810/generations/5e1bef4e-f457-471e-aec3-f9d3e770901c/segments/1:4:1/Flux_Schnell_landscape_featuring_a_vast_frozen_expanse_with_sn_0.jpg",
+            "https://cdn.leonardo.ai/users/2cbfd30f-6e5b-419d-94c0-00853dd21810/generations/f2f315c6-87bb-40c4-b4ac-1eb72d2f4389/segments/1:4:1/Flux_Schnell_a_serene_landscape_of_a_beach_at_sunset_with_warm_0.jpg",
+            "https://cdn.leonardo.ai/users/2cbfd30f-6e5b-419d-94c0-00853dd21810/generations/e0f8ec3e-0bfb-45f1-8133-4feb14cf842a/segments/1:4:1/Flux_Schnell_a_serene_autumn_landscape_with_warm_golden_light__0.jpg"
+        ];
+
+        let count = 0;
+
+        function displayNextImage() {
+            ...;
+            ...;
+            ...;
+
+            ...;
+
+            count++;
+            if (count >= imagesArray.length) count = 0;
+        }
+
+        // Initial image
+        displayNextImage();
+
+        setInterval(displayNextImage, 5000);
+    </script>
+</body>
+</html>

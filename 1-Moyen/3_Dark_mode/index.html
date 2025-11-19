@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <!--Intégration des icones fontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body id="body">
+    <script>
+        let body = ...;
+        let switchModeIcon = ...;
+
+        let lightMode = true;
+
+        function switchMode() {
+            return !lightMode;
+        }
+
+        function changeBackgroundColor() {
+            lightMode = switchMode();
+
+            // https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+            ...
+
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator
+            ...
+        }
+    </script>
+</body>
+</html>

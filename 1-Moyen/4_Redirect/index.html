@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirection selon l'âge</title>
+</head>
+
+<body>
+    <script>
+        const REDIRECT_FORM = ...;
+        let userBirthdayYear = ...;
+
+        let actualDate = new Date();
+        let actualYear = actualDate.getFullYear();
+
+        function redirectUserDependsOnAge(event) {
+            event.preventDefault();
+
+            let userAge = actualYear - ...;
+
+            if (userAge < 10) {
+                // https://developer.mozilla.org/fr/docs/Web/HTTP/Guides/Redirections
+                ...
+            } else if (userAge < 25) {
+                ...
+            } else {
+                ...
+            }
+        }
+
+        // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+        REDIRECT_FORM.addEventListener("submit", redirectUserDependsOnAge);
+    </script>
+</body>
+</html>
